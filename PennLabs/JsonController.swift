@@ -6,6 +6,8 @@
 //  Copyright © 2017 Matthew Riley. All rights reserved.
 //
 
+import Alamofire
+import SwiftyJSON
 import UIKit
 
 class JsonController: UIViewController {
@@ -28,6 +30,14 @@ class JsonController: UIViewController {
 
     @IBAction func submit(_ sender: Any) {
         displayField.text = "pressed"
+        
+        let params: Parameters = ["q": "hill"]
+        Alamofire.request("https://api.pennlabs.org/buildings/search", parameters: params).responseJSON { response in
+            if let json = response.result.value {
+                print("\(json)")
+                self.displayField.text = "\(json)"
+            }
+        }
     }
     
     /*

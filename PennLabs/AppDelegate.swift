@@ -16,6 +16,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // if no Data.plist file exists on the device, copy the one in the bundle to the Documents dir
+        let url = FileManager.default.urls(for: .documentDirectory, in: .allDomainsMask).first!
+        let fileUrl = url.appendingPathComponent("Data.plist")
+        print(fileUrl)
+        if !FileManager.default.fileExists(atPath: fileUrl.path) {
+            let bundlePath = Bundle.main.path(forResource: "Data", ofType: "plist")
+            print(bundlePath!)
+            do {
+                try FileManager.default.copyItem(atPath: bundlePath!, toPath: fileUrl.path)
+            } catch let error as NSError {
+                print(error)
+            }
+            print(FileManager.default.fileExists(atPath: fileUrl.path))
+        } else {
+            print("file exists")
+        }
+        
         return true
     }
 

@@ -25,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="-1486" y="-86"/>
         </scene>
-        <!--Json Controller-->
+        <!--basic search-->
         <scene sceneID="NcV-sa-fia">
             <objects>
-                <viewController id="6jI-8X-Y2s" customClass="JsonController" customModule="PennLabs" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="basic search" id="6jI-8X-Y2s" customClass="JsonController" customModule="PennLabs" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="moS-rq-NSD"/>
                         <viewControllerLayoutGuide type="bottom" id="b33-pX-KY7"/>
@@ -89,10 +89,10 @@
             </objects>
             <point key="canvasLocation" x="-607.20000000000005" y="-87.706146926536732"/>
         </scene>
-        <!--Map Controller-->
+        <!--map search-->
         <scene sceneID="Ncu-oJ-Y00">
             <objects>
-                <viewController id="qF9-CA-ccr" customClass="MapController" customModule="PennLabs" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="map search" id="qF9-CA-ccr" customClass="MapController" customModule="PennLabs" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tqQ-6B-Wl9"/>
                         <viewControllerLayoutGuide type="bottom" id="V7r-rA-90q"/>
@@ -117,6 +117,14 @@
                                     <action selector="submit:" destination="qF9-CA-ccr" eventType="touchUpInside" id="kkB-MV-nKy"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXk-So-MbI">
+                                <rect key="frame" x="244" y="144" width="47" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="history"/>
+                                <connections>
+                                    <segue destination="z38-Ec-3Gc" kind="show" id="UVt-rC-9El"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -138,6 +146,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ry-tZ-Llx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="309.60000000000002" y="-87.706146926536732"/>
+        </scene>
+        <!--history-->
+        <scene sceneID="0P5-Cd-pED">
+            <objects>
+                <tableViewController title="history" id="z38-Ec-3Gc" customClass="HistoryController" customModule="PennLabs" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="HH2-G3-bgD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="historyProtoCell" id="ou6-5R-BVe" customClass="HistoryCell" customModule="PennLabs" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ou6-5R-BVe" id="iqh-nL-J2a">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="search name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5oM-Qb-4vJ">
+                                            <rect key="frame" x="8" y="11.5" width="98.5" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="leadingMargin" secondItem="5oM-Qb-4vJ" secondAttribute="leading" id="SGq-WI-EmD"/>
+                                        <constraint firstItem="5oM-Qb-4vJ" firstAttribute="centerY" secondItem="iqh-nL-J2a" secondAttribute="centerY" id="Xru-fQ-rgG"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="5oM-Qb-4vJ" id="45I-T9-69A"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="z38-Ec-3Gc" id="a8k-4S-hep"/>
+                            <outlet property="delegate" destination="z38-Ec-3Gc" id="EB2-tU-jBX"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="table" destination="HH2-G3-bgD" id="1nV-C7-BeM"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fwe-cG-gNy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1108" y="-86.806596701649184"/>
         </scene>
     </scenes>
 </document>

@@ -19,6 +19,9 @@
 		C9002C061E4F7D4100489982 /* PennLabsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9002C051E4F7D4100489982 /* PennLabsUITests.swift */; };
 		C961A1D81E4F80D300D0FE14 /* JsonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C961A1D71E4F80D300D0FE14 /* JsonController.swift */; };
 		C961A1DA1E4F891800D0FE14 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C961A1D91E4F891800D0FE14 /* MapController.swift */; };
+		C961A1DC1E4F965700D0FE14 /* HistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C961A1DB1E4F965700D0FE14 /* HistoryController.swift */; };
+		C961A1DE1E4F972D00D0FE14 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C961A1DD1E4F972D00D0FE14 /* HistoryCell.swift */; };
+		C961A1E01E4F9BB500D0FE14 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = C961A1DF1E4F9BB500D0FE14 /* Data.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,9 @@
 		C9002C071E4F7D4100489982 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C961A1D71E4F80D300D0FE14 /* JsonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonController.swift; sourceTree = "<group>"; };
 		C961A1D91E4F891800D0FE14 /* MapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
+		C961A1DB1E4F965700D0FE14 /* HistoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryController.swift; path = ../HistoryController.swift; sourceTree = "<group>"; };
+		C961A1DD1E4F972D00D0FE14 /* HistoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryCell.swift; path = ../HistoryCell.swift; sourceTree = "<group>"; };
+		C961A1DF1E4F9BB500D0FE14 /* Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +147,8 @@
 		C9002BE41E4F7D4100489982 /* PennLabs */ = {
 			isa = PBXGroup;
 			children = (
+				C961A1DB1E4F965700D0FE14 /* HistoryController.swift */,
+				C961A1DD1E4F972D00D0FE14 /* HistoryCell.swift */,
 				C9002BE51E4F7D4100489982 /* AppDelegate.swift */,
 				C9002BE71E4F7D4100489982 /* ViewController.swift */,
 				C9002BE91E4F7D4100489982 /* Main.storyboard */,
@@ -149,6 +157,7 @@
 				C9002BEE1E4F7D4100489982 /* LaunchScreen.storyboard */,
 				C9002BF11E4F7D4100489982 /* Info.plist */,
 				C961A1D71E4F80D300D0FE14 /* JsonController.swift */,
+				C961A1DF1E4F9BB500D0FE14 /* Data.plist */,
 			);
 			path = PennLabs;
 			sourceTree = "<group>";
@@ -290,6 +299,7 @@
 			files = (
 				C9002BF01E4F7D4100489982 /* LaunchScreen.storyboard in Resources */,
 				C9002BED1E4F7D4100489982 /* Assets.xcassets in Resources */,
+				C961A1E01E4F9BB500D0FE14 /* Data.plist in Resources */,
 				C9002BEB1E4F7D4100489982 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,6 +463,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C961A1DE1E4F972D00D0FE14 /* HistoryCell.swift in Sources */,
+				C961A1DC1E4F965700D0FE14 /* HistoryController.swift in Sources */,
 				C961A1DA1E4F891800D0FE14 /* MapController.swift in Sources */,
 				C9002BE81E4F7D4100489982 /* ViewController.swift in Sources */,
 				C9002BE61E4F7D4100489982 /* AppDelegate.swift in Sources */,

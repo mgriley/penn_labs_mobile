@@ -29,6 +29,12 @@ class MapController: UIViewController {
     // currently displayed annotations
     var currentBuildings: [Building] = []
     
+    // list of past searches
+    var history: [String] = []
+    
+    // path to history
+    var plistPath: String?
+    
     // parse json result
     func jsonToBuilding(json: JSON) -> Building {
         let lat = json["latitude"].doubleValue
@@ -47,6 +53,9 @@ class MapController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        plistPath = Bundle.main.path(forResource: "Data", ofType: "plist")
+        
+        // for testing
         let center = CLLocationCoordinate2D(latitude: 39.950199, longitude: -75.200302)
         let span = MKCoordinateSpan(latitudeDelta: 0.25, longitudeDelta: 0.25)
         let region = MKCoordinateRegion(center: center, span: span)
@@ -65,7 +74,11 @@ class MapController: UIViewController {
         // remove current annotations
         self.mapView.removeAnnotations(currentBuildings)
         
-        let params: Parameters = ["q": searchField.text ?? ""]
+        let searchText = searchField.text ?? ""
+        if searchText == "" {
+            return
+        }
+        let params: Parameters = ["q": searchText]
         Alamofire.request("https://api.pennlabs.org/buildings/search", parameters: params).responseJSON { response in
             
             guard let jsonData = response.result.value else {
@@ -87,7 +100,12 @@ class MapController: UIViewController {
                 self.mapView.addAnnotations(buildings)
             }
             
-            self.mapView.addAnnotations(self.currentBuildings)
+            // add the search to the search history
+            let url = FileManager.default.urls(for: .documentDirectory, in: .allDomainsMask).first!
+            let fileUrl = url.appendingPathComponent("Data.plist")
+            let arr = NSMutableArray(contentsOfFile: fileUrl.path)
+            arr?.add(searchText)
+            arr?.write(toFile: fileUrl.path, atomically: false)
         }
     }
 

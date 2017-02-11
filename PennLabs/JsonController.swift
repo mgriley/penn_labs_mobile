@@ -29,9 +29,8 @@ class JsonController: UIViewController {
     }
 
     @IBAction func submit(_ sender: Any) {
-        displayField.text = "pressed"
         
-        let params: Parameters = ["q": entryField.text!]
+        let params: Parameters = ["q": entryField.text ?? ""]
         Alamofire.request("https://api.pennlabs.org/buildings/search", parameters: params).responseJSON { response in
             if let json = response.result.value {
                 print("\(json)")

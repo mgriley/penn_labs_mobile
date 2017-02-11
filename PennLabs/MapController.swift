@@ -1,25 +1,22 @@
 //
-//  JsonController.swift
+//  MapController.swift
 //  PennLabs
 //
 //  Created by Matthew Riley on 2017-02-11.
 //  Copyright © 2017 Matthew Riley. All rights reserved.
 //
 
-import Alamofire
-import SwiftyJSON
 import UIKit
+import MapKit
 
-class JsonController: UIViewController {
+class MapController: UIViewController {
 
-    @IBOutlet weak var entryField: UITextField!
-    @IBOutlet weak var displayField: UITextView!
+    @IBOutlet weak var searchField: UITextField!
+    @IBOutlet weak var mapView: MKMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        displayField.text = "welcome!"
-        
+
         // Do any additional setup after loading the view.
     }
 
@@ -27,19 +24,10 @@ class JsonController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    @IBAction func submit(_ sender: Any) {
-        displayField.text = "pressed"
-        
-        let params: Parameters = ["q": entryField.text!]
-        Alamofire.request("https://api.pennlabs.org/buildings/search", parameters: params).responseJSON { response in
-            if let json = response.result.value {
-                print("\(json)")
-                self.displayField.text = "\(json)"
-            }
-        }
-    }
     
+    @IBAction func submit(_ sender: Any) {
+    }
+
     /*
     // MARK: - Navigation
 

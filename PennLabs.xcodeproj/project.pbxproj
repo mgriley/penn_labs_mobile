@@ -18,6 +18,7 @@
 		C9002BFB1E4F7D4100489982 /* PennLabsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9002BFA1E4F7D4100489982 /* PennLabsTests.swift */; };
 		C9002C061E4F7D4100489982 /* PennLabsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9002C051E4F7D4100489982 /* PennLabsUITests.swift */; };
 		C961A1D81E4F80D300D0FE14 /* JsonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C961A1D71E4F80D300D0FE14 /* JsonController.swift */; };
+		C961A1DA1E4F891800D0FE14 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C961A1D91E4F891800D0FE14 /* MapController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		C9002C051E4F7D4100489982 /* PennLabsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PennLabsUITests.swift; sourceTree = "<group>"; };
 		C9002C071E4F7D4100489982 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C961A1D71E4F80D300D0FE14 /* JsonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonController.swift; sourceTree = "<group>"; };
+		C961A1D91E4F891800D0FE14 /* MapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 				C9002BE51E4F7D4100489982 /* AppDelegate.swift */,
 				C9002BE71E4F7D4100489982 /* ViewController.swift */,
 				C9002BE91E4F7D4100489982 /* Main.storyboard */,
+				C961A1D91E4F891800D0FE14 /* MapController.swift */,
 				C9002BEC1E4F7D4100489982 /* Assets.xcassets */,
 				C9002BEE1E4F7D4100489982 /* LaunchScreen.storyboard */,
 				C9002BF11E4F7D4100489982 /* Info.plist */,
@@ -450,6 +453,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C961A1DA1E4F891800D0FE14 /* MapController.swift in Sources */,
 				C9002BE81E4F7D4100489982 /* ViewController.swift in Sources */,
 				C9002BE61E4F7D4100489982 /* AppDelegate.swift in Sources */,
 				C961A1D81E4F80D300D0FE14 /* JsonController.swift in Sources */,

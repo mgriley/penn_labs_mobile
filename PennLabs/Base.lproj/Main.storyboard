@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -26,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="-1486" y="-86"/>
         </scene>
-        <!--View Controller-->
+        <!--Json Controller-->
         <scene sceneID="NcV-sa-fia">
             <objects>
-                <viewController id="6jI-8X-Y2s" sceneMemberID="viewController">
+                <viewController id="6jI-8X-Y2s" customClass="JsonController" customModule="PennLabs" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="moS-rq-NSD"/>
                         <viewControllerLayoutGuide type="bottom" id="b33-pX-KY7"/>
@@ -41,6 +40,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZY-n0-17q">
                                 <rect key="frame" x="164" y="152" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="submit:" destination="6jI-8X-Y2s" eventType="touchUpInside" id="itt-EA-6F5"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hWj-Xg-Us5">
                                 <rect key="frame" x="67" y="219" width="240" height="286"/>
@@ -69,6 +71,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xT5-tF-bbf"/>
+                    <connections>
+                        <outlet property="displayField" destination="hWj-Xg-Us5" id="vLJ-Is-OGQ"/>
+                        <outlet property="entryField" destination="hUa-vM-TH7" id="bgn-Hm-AQp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="47i-Tb-HJ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B0D1EF2DE35FC165D080487 /* Pods_PennLabs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69F30AE3165046DC0705E85E /* Pods_PennLabs.framework */; };
+		5A0BE661FBCFFA13E05A8666 /* Pods_PennLabsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F58D05463DFE33D2E97F77 /* Pods_PennLabsTests.framework */; };
+		863816B4B63043B16091C85F /* Pods_PennLabsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 386C8E6A4069022272E6E9C6 /* Pods_PennLabsUITests.framework */; };
 		C9002BE61E4F7D4100489982 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9002BE51E4F7D4100489982 /* AppDelegate.swift */; };
 		C9002BE81E4F7D4100489982 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9002BE71E4F7D4100489982 /* ViewController.swift */; };
 		C9002BEB1E4F7D4100489982 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9002BE91E4F7D4100489982 /* Main.storyboard */; };
@@ -14,6 +17,7 @@
 		C9002BF01E4F7D4100489982 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9002BEE1E4F7D4100489982 /* LaunchScreen.storyboard */; };
 		C9002BFB1E4F7D4100489982 /* PennLabsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9002BFA1E4F7D4100489982 /* PennLabsTests.swift */; };
 		C9002C061E4F7D4100489982 /* PennLabsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9002C051E4F7D4100489982 /* PennLabsUITests.swift */; };
+		C961A1D81E4F80D300D0FE14 /* JsonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C961A1D71E4F80D300D0FE14 /* JsonController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1900E01FB9591D5F0F412C32 /* Pods-PennLabs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PennLabs.release.xcconfig"; path = "Pods/Target Support Files/Pods-PennLabs/Pods-PennLabs.release.xcconfig"; sourceTree = "<group>"; };
+		2FB2C62F91ADC19130DA3111 /* Pods-PennLabsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PennLabsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PennLabsTests/Pods-PennLabsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		386C8E6A4069022272E6E9C6 /* Pods_PennLabsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PennLabsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CD9A106CA3F820A1B28E4AB /* Pods-PennLabs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PennLabs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PennLabs/Pods-PennLabs.debug.xcconfig"; sourceTree = "<group>"; };
+		3D32C892E3D0903585A5BB92 /* Pods-PennLabsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PennLabsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PennLabsUITests/Pods-PennLabsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3F9A821A6D652EA808487811 /* Pods-PennLabsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PennLabsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PennLabsUITests/Pods-PennLabsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		69F30AE3165046DC0705E85E /* Pods_PennLabs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PennLabs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84CCD60D4A35A7A8D3D2FFD4 /* Pods-PennLabsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PennLabsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PennLabsTests/Pods-PennLabsTests.release.xcconfig"; sourceTree = "<group>"; };
+		90F58D05463DFE33D2E97F77 /* Pods_PennLabsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PennLabsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9002BE21E4F7D4100489982 /* PennLabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PennLabs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9002BE51E4F7D4100489982 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9002BE71E4F7D4100489982 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +60,7 @@
 		C9002C011E4F7D4100489982 /* PennLabsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PennLabsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9002C051E4F7D4100489982 /* PennLabsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PennLabsUITests.swift; sourceTree = "<group>"; };
 		C9002C071E4F7D4100489982 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C961A1D71E4F80D300D0FE14 /* JsonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B0D1EF2DE35FC165D080487 /* Pods_PennLabs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A0BE661FBCFFA13E05A8666 /* Pods_PennLabsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +84,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				863816B4B63043B16091C85F /* Pods_PennLabsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A7CD689BE8CA436682231DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3CD9A106CA3F820A1B28E4AB /* Pods-PennLabs.debug.xcconfig */,
+				1900E01FB9591D5F0F412C32 /* Pods-PennLabs.release.xcconfig */,
+				2FB2C62F91ADC19130DA3111 /* Pods-PennLabsTests.debug.xcconfig */,
+				84CCD60D4A35A7A8D3D2FFD4 /* Pods-PennLabsTests.release.xcconfig */,
+				3F9A821A6D652EA808487811 /* Pods-PennLabsUITests.debug.xcconfig */,
+				3D32C892E3D0903585A5BB92 /* Pods-PennLabsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		91B47B0FB2E197A4798AA7A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69F30AE3165046DC0705E85E /* Pods_PennLabs.framework */,
+				90F58D05463DFE33D2E97F77 /* Pods_PennLabsTests.framework */,
+				386C8E6A4069022272E6E9C6 /* Pods_PennLabsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C9002BD91E4F7D4100489982 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +121,8 @@
 				C9002BF91E4F7D4100489982 /* PennLabsTests */,
 				C9002C041E4F7D4100489982 /* PennLabsUITests */,
 				C9002BE31E4F7D4100489982 /* Products */,
+				7A7CD689BE8CA436682231DD /* Pods */,
+				91B47B0FB2E197A4798AA7A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +145,7 @@
 				C9002BEC1E4F7D4100489982 /* Assets.xcassets */,
 				C9002BEE1E4F7D4100489982 /* LaunchScreen.storyboard */,
 				C9002BF11E4F7D4100489982 /* Info.plist */,
+				C961A1D71E4F80D300D0FE14 /* JsonController.swift */,
 			);
 			path = PennLabs;
 			sourceTree = "<group>";
@@ -132,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9002C0A1E4F7D4100489982 /* Build configuration list for PBXNativeTarget "PennLabs" */;
 			buildPhases = (
+				E97A6A0DC7ED654552F0A347 /* [CP] Check Pods Manifest.lock */,
 				C9002BDE1E4F7D4100489982 /* Sources */,
 				C9002BDF1E4F7D4100489982 /* Frameworks */,
 				C9002BE01E4F7D4100489982 /* Resources */,
+				68BA781194329FF2FE0F3D7E /* [CP] Embed Pods Frameworks */,
+				D6A4C73DAD19D0C548FCD031 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9002C0D1E4F7D4100489982 /* Build configuration list for PBXNativeTarget "PennLabsTests" */;
 			buildPhases = (
+				2A02150E76C774EF1659D9B2 /* [CP] Check Pods Manifest.lock */,
 				C9002BF21E4F7D4100489982 /* Sources */,
 				C9002BF31E4F7D4100489982 /* Frameworks */,
 				C9002BF41E4F7D4100489982 /* Resources */,
+				0A5E843E0E605CA4583A950D /* [CP] Embed Pods Frameworks */,
+				C3AF9A5006CFED288A45E459 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9002C101E4F7D4100489982 /* Build configuration list for PBXNativeTarget "PennLabsUITests" */;
 			buildPhases = (
+				CB586DCFDFCDD8A0E331CDBB /* [CP] Check Pods Manifest.lock */,
 				C9002BFD1E4F7D4100489982 /* Sources */,
 				C9002BFE1E4F7D4100489982 /* Frameworks */,
 				C9002BFF1E4F7D4100489982 /* Resources */,
+				50D9B6F1CC88322A41E7DEFF /* [CP] Embed Pods Frameworks */,
+				30C3C5FB995FEFC61EAAA854 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +245,7 @@
 				TargetAttributes = {
 					C9002BE11E4F7D4100489982 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 7T78XPL7SP;
 						ProvisioningStyle = Automatic;
 					};
 					C9002BF51E4F7D4100489982 = {
@@ -254,6 +307,144 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A5E843E0E605CA4583A950D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PennLabsTests/Pods-PennLabsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A02150E76C774EF1659D9B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		30C3C5FB995FEFC61EAAA854 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PennLabsUITests/Pods-PennLabsUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50D9B6F1CC88322A41E7DEFF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PennLabsUITests/Pods-PennLabsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68BA781194329FF2FE0F3D7E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PennLabs/Pods-PennLabs-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3AF9A5006CFED288A45E459 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PennLabsTests/Pods-PennLabsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB586DCFDFCDD8A0E331CDBB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D6A4C73DAD19D0C548FCD031 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PennLabs/Pods-PennLabs-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E97A6A0DC7ED654552F0A347 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C9002BDE1E4F7D4100489982 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -261,6 +452,7 @@
 			files = (
 				C9002BE81E4F7D4100489982 /* ViewController.swift in Sources */,
 				C9002BE61E4F7D4100489982 /* AppDelegate.swift in Sources */,
+				C961A1D81E4F80D300D0FE14 /* JsonController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,9 +600,12 @@
 		};
 		C9002C0B1E4F7D4100489982 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CD9A106CA3F820A1B28E4AB /* Pods-PennLabs.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7T78XPL7SP;
 				INFOPLIST_FILE = PennLabs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Riley.PennLabs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -420,9 +615,12 @@
 		};
 		C9002C0C1E4F7D4100489982 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1900E01FB9591D5F0F412C32 /* Pods-PennLabs.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7T78XPL7SP;
 				INFOPLIST_FILE = PennLabs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Riley.PennLabs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -432,6 +630,7 @@
 		};
 		C9002C0E1E4F7D4100489982 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FB2C62F91ADC19130DA3111 /* Pods-PennLabsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -446,6 +645,7 @@
 		};
 		C9002C0F1E4F7D4100489982 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84CCD60D4A35A7A8D3D2FFD4 /* Pods-PennLabsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -460,6 +660,7 @@
 		};
 		C9002C111E4F7D4100489982 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F9A821A6D652EA808487811 /* Pods-PennLabsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = PennLabsUITests/Info.plist;
@@ -473,6 +674,7 @@
 		};
 		C9002C121E4F7D4100489982 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D32C892E3D0903585A5BB92 /* Pods-PennLabsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = PennLabsUITests/Info.plist;
@@ -503,6 +705,7 @@
 				C9002C0C1E4F7D4100489982 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9002C0D1E4F7D4100489982 /* Build configuration list for PBXNativeTarget "PennLabsTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +714,7 @@
 				C9002C0F1E4F7D4100489982 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9002C101E4F7D4100489982 /* Build configuration list for PBXNativeTarget "PennLabsUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +723,7 @@
 				C9002C121E4F7D4100489982 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

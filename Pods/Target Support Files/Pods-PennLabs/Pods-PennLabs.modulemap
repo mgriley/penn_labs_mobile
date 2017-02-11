@@ -1,0 +1,6 @@
+framework module Pods_PennLabs {
+  umbrella header "Pods-PennLabs-umbrella.h"
+
+  export *
+  module * { export * }
+}

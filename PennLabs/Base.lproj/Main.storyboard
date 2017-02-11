@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cXv-mM-Nur">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Til-oD-TkV">
+            <objects>
+                <navigationController id="cXv-mM-Nur" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Nq-ey-eTD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="6jI-8X-Y2s" kind="relationship" relationship="rootViewController" id="ke9-dD-puX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="god-ul-WBd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1486" y="-86"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NcV-sa-fia">
+            <objects>
+                <viewController id="6jI-8X-Y2s" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="moS-rq-NSD"/>
+                        <viewControllerLayoutGuide type="bottom" id="b33-pX-KY7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="arA-jC-j91">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZY-n0-17q">
+                                <rect key="frame" x="164" y="152" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hWj-Xg-Us5">
+                                <rect key="frame" x="67" y="219" width="240" height="286"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hUa-vM-TH7">
+                                <rect key="frame" x="139" y="89" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hWj-Xg-Us5" firstAttribute="centerX" secondItem="arA-jC-j91" secondAttribute="centerX" id="9yJ-ZW-W0a"/>
+                            <constraint firstItem="b33-pX-KY7" firstAttribute="top" secondItem="hWj-Xg-Us5" secondAttribute="bottom" constant="162" id="C2e-LZ-dsy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hWj-Xg-Us5" secondAttribute="trailing" constant="52" id="dat-4G-dfn"/>
+                            <constraint firstItem="BZY-n0-17q" firstAttribute="centerX" secondItem="arA-jC-j91" secondAttribute="centerX" id="dgT-Ic-cEY"/>
+                            <constraint firstItem="hUa-vM-TH7" firstAttribute="top" secondItem="moS-rq-NSD" secondAttribute="bottom" constant="25" id="ff0-bt-4GY"/>
+                            <constraint firstItem="hUa-vM-TH7" firstAttribute="centerX" secondItem="arA-jC-j91" secondAttribute="centerX" id="h2U-pW-9hz"/>
+                            <constraint firstItem="hWj-Xg-Us5" firstAttribute="top" secondItem="BZY-n0-17q" secondAttribute="bottom" constant="37" id="sso-3r-sdr"/>
+                            <constraint firstItem="BZY-n0-17q" firstAttribute="top" secondItem="hUa-vM-TH7" secondAttribute="bottom" constant="33" id="udb-mw-RiQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xT5-tF-bbf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="47i-Tb-HJ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-607.20000000000005" y="-87.706146926536732"/>
+        </scene>
+    </scenes>
+</document>

@@ -11,10 +11,14 @@ import MapKit
 import Alamofire
 import SwiftyJSON
 
-struct Building {
-    var name: String
-    var latitude: Double
-    var longitude: Double
+class Building : NSObject, MKAnnotation {
+    var coordinate: CLLocationCoordinate2D
+    var title: String?
+    
+    init(coordinate: CLLocationCoordinate2D, title: String?) {
+        self.coordinate = coordinate
+        self.title = title
+    }
 }
 
 class MapController: UIViewController {
@@ -22,18 +26,21 @@ class MapController: UIViewController {
     @IBOutlet weak var searchField: UITextField!
     @IBOutlet weak var mapView: MKMapView!
     
+    // currently displayed annotations
+    var currentBuildings: [Building] = []
+    
     // parse json result
     func jsonToBuilding(json: JSON) -> Building {
         let lat = json["latitude"].doubleValue
         let long = json["longitude"].doubleValue
-        let name = json["title"].string ?? "name not found"
-        return Building(name: name, latitude: lat, longitude: long)
+        let coord = CLLocationCoordinate2D(latitude: lat, longitude: long)
+        let name = json["title"].string
+        return Building(coordinate: coord, title: name)
     }
     
     func setRegionToBuilding(b: Building) {
-        let center = CLLocationCoordinate2D(latitude: b.latitude, longitude: b.longitude)
-        let span = MKCoordinateSpan(latitudeDelta: 0.125, longitudeDelta: 0.125)
-        let region = MKCoordinateRegion(center: center, span: span)
+        let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
+        let region = MKCoordinateRegion(center: b.coordinate, span: span)
         mapView.setRegion(region, animated: false)
     }
     
@@ -55,6 +62,9 @@ class MapController: UIViewController {
     
     @IBAction func submit(_ sender: Any) {
         
+        // remove current annotations
+        self.mapView.removeAnnotations(currentBuildings)
+        
         let params: Parameters = ["q": searchField.text ?? ""]
         Alamofire.request("https://api.pennlabs.org/buildings/search", parameters: params).responseJSON { response in
             
@@ -66,8 +76,18 @@ class MapController: UIViewController {
             let buildings: [Building] = json["result_data"].arrayValue.map(self.jsonToBuilding)
             print(buildings)
             
-            // center on the first building
-            self.setRegionToBuilding(b: buildings[0])
+            // update buildings list
+            self.currentBuildings = buildings
+            
+            if (buildings.count > 0) {
+                // center the map on the first building
+                self.setRegionToBuilding(b: buildings.first!)
+                
+                // add all annotations to map
+                self.mapView.addAnnotations(buildings)
+            }
+            
+            self.mapView.addAnnotations(self.currentBuildings)
         }
     }
 
